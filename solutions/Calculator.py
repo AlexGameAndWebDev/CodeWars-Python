@@ -1,12 +1,12 @@
 """
-Calculator
+Calculator v2 (This project is forked)
 http://www.codewars.com/kata/5235c913397cbf2508000048/train/python
 """
 import operator
 
 
 class Calculator(object):
-    operands = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.div}
+    operands = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.truediv} #kata now wants operator.truediv instead of operator.div
 
     def __init__(self):
         self.result = []
